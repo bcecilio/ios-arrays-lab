@@ -41,8 +41,10 @@ Iterate through the array below. For each state, print out the name of the state
 Answer
 ```
 let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
-moreStates.append("Hawaii")
+
+for states in moreStates {
 print("\(moreStates): is in the continental United States.")
+}
 ```
 
 
