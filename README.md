@@ -43,7 +43,11 @@ Answer
 let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
 
 for states in moreStates {
-print("\(moreStates): is in the continental United States.")
+    if states == "Hawaii"{
+        print("\(states): is not in the continental United States.")
+    } else {
+print("\(states): is in the continental United States.")
+}
 }
 ```
 
@@ -128,6 +132,17 @@ target = 3
 
 //false
 ```
+Answer
+```
+var numbers = [4, 2, 6, 73, 32, 4, 2, 1]
+let target: Int = 32
+
+for number in numbers {
+    if number == 32{
+        print("👺")
+    }
+}
+```
 
 
 ## Question 8
@@ -138,6 +153,10 @@ Find the largest value in an array of Int.  Do not use the built-in `max()` meth
 let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
+```
+Answer
+```
+let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int($0)}
 ```
 
 
@@ -158,12 +177,31 @@ Iterate through `secondListOfNumbers`, and print out all the odd numbers.
 
 `var secondListOfNumbers = [19,13,14,19,101,10000,141,404]`
 
+Answer 
+```
+var secondListOfNumbers = [19,13,14,19,101,10000,141,404]
+
+for oddNums in secondListOfNumbers {
+if oddNums % 2 == 1{
+print(oddNums)
+}
+}
+```
 
 ## Question 11
 
 Iterate through `thirdListOfNumbers`, and print out the sum.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
+
+Answer
+```
+var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]
+
+for sum in thirdListOfNumbers {
+
+}
+```
 
 
 ## Question 12
